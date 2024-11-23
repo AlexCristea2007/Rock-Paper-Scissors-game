@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <!-- stats -->
+      <nav class="game-stats">
+        <img
+          class="original-options-img"
+          src="images/logo.svg"
+          alt="options-img"
+        />
+        <div class="score-block">
+          <span class="text-medium">Score</span>
+          <p class="score text-large">0</p>
+        </div>
+      </nav>
+      <!-- gameplay -->
+      <main class="gameplay-screen">
+        <!-- choosing step -->
+        <section class="original-choosing-step">
+          <button class="choose-btn">
+            <div class="circle">
+              <img src="images/icon-paper.svg" alt="icon-paper" />
+            </div>
+          </button>
+          <button class="choose-btn">
+            <div class="circle">
+              <img src="images/icon-scissors.svg" alt="icon-scissors" />
+            </div>
+          </button>
+          <button class="choose-btn">
+            <div class="circle">
+              <img src="images/icon-rock.svg" alt="icon-rock" />
+            </div>
+          </button>
+        </section>
+        <!-- fighting step -->
+        <section class="original-fighting-step">
+          <div class="teams">
+            <div class="user">
+              <span class="text-medium">You picked</span>
+              <div class="user-choice">
+                <div class="choice-preview">
+                  <div class="circle">
+                    <img src="images/icon-scissors.svg" alt="user-choice" />
+                  </div>
+                </div>
+                <div class="empty-circle"></div>
+                <div class="wave1">
+                  <div class="wave2">
+                    <div class="wave3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="house">
+              <span class="text-medium">The house picked</span>
+              <div class="house-choice">
+                <div class="choice-preview">
+                  <div class="circle">
+                    <img src="images/icon-scissors.svg" alt="house-choice" />
+                  </div>
+                </div>
+                <div class="empty-circle"></div>
+                <div class="wave1">
+                  <div class="wave2">
+                    <div class="wave3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="result-screen">
+            <span class="text-large"></span>
+            <button class="play-again-btn text-medium">Play again</button>
+          </div>
+        </section>
+      </main>
+      <!-- rules -->
+      <div class="rules-btn-wrapper">
+        <button class="rules-btn text-medium">Rules</button>
+      </div>
+      <section class="rules-container">
+        <div class="top-rules">
+          <p class="text-medium">Rules</p>
+          <button class="close-rules-btn">
+            <img src="images/icon-close.svg" alt="icon-close" />
+          </button>
+        </div>
+        <img
+          class="rule-preview"
+          src="images/image-rules.svg"
+          alt="rule-preview"
+        />
+      </section>
+      <div class="bg-brightness"></div>
+    </div>
+  </body>
+</html>
